@@ -9,6 +9,10 @@ from model.model import MiniMindLM
 from model.LMConfig import LMConfig
 from model.model_lora import *
 
+import sys
+import io
+sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8', errors='replace')
+
 warnings.filterwarnings('ignore')
 
 
